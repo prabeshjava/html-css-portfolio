@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+
+/* header */
+header{
+    background: #333;
+    padding: 10px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* profile-img */
+
+#profile-img {
+       text-align: center;
+       margin-top: 10px;
+
+}
+#profile-img img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/* container */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+    padding: 20px;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.box{
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* skills */
+
+.skill-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    text-align: center;
+}
+.skill-grid div{
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+ /* Experience */
+ .experience {
+    text-align: left;
+}
+
+.experience p {
+    margin: 5px 0;
+}
+
+/* education */
+
+.education{
+   text-align: left;
+
+}
+.education p{
+    margin: 5px 0;
+ 
+ }
+
+
+/* 
+project-grid */
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    padding:10px;
+}
+
+.project-grid div{
+    background: #666;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+
+footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+
+
